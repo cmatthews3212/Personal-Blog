@@ -1,4 +1,5 @@
 body {
+    font-family: "Trebuchet MS", Tahoma, Verdana, Arial;
     display: block;
     position: relative;
     text-align: center;
@@ -12,7 +13,7 @@ h3 {
     width: 20%;
     padding: 15px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: solid 5px #db7093;
     border-radius: 10px;
 }

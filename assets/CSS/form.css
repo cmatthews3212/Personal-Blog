@@ -21,10 +21,20 @@ input {
     padding: 10px;
 }
 
+label {
+    background-color: #ffb6c1;
+    width: 20%;
+    margin-left: 10px;
+    border: solid 5px 	#db7093;
+    border-radius: 10px;
+    /* margin: 0 auto; */
+    
+}
+
 #submit {
     background-color: #d8bfd8;
     width: 25%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     
 }
 
