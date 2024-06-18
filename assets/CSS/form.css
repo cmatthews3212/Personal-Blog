@@ -34,9 +34,20 @@ label {
 #submit {
     background-color: #d8bfd8;
     width: 25%;
+    padding: 7px;
     /* margin: 0 auto; */
+    font-size: 20px;
     
 }
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: #dda0dd;
+}
+
 
 
 
