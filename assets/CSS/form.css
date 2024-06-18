@@ -1,7 +1,7 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
 }
 
@@ -9,6 +9,23 @@ form {
 input,
 textarea {
     margin: 10px;
+    border: solid 5px 	#db7093;
+    border-radius: 10px;
+}
+
+textarea {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+}
+
+#submit {
+    background-color: #d8bfd8;
+    width: 25%;
+    margin: 0 auto;
+    
 }
 
 
