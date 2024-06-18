@@ -1,6 +1,24 @@
 body {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    position: relative;
     text-align: center;
     background-color: 	#ffc0cb;
+    top: 150px;
 }
+
+h1,
+h3 {
+    background-color: 	#d8bfd8;
+    width: 20%;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: solid 5px #db7093;
+    border-radius: 10px;
+}
+
+h3 {
+    padding: 10px;
+    width: 15%;
+}
+
