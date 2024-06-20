@@ -1,4 +1,11 @@
-const redirect = function () {
+const backButton = document.getElementById("redirect")
+
+
+
+const redirect = function (event) {
     event.preventDefault();
-    window.location.href = "index.html";
-}
+    location.href = "./index.html";
+};
+
+backButton.addEventListener('click', redirect);
+

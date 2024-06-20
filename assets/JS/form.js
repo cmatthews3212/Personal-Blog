@@ -9,7 +9,7 @@ let valuesArray = [];
 
 const values = localStorage.getItem('Form Values');
 
-submitButton.addEventListener('click', redirect);
+
 
 
 function redirect (event) {
@@ -31,4 +31,6 @@ function redirect (event) {
 
     location.href = "./blog.html"
 };
+
+submitButton.addEventListener('click', redirect);
 
