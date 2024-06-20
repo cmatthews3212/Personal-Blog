@@ -19,10 +19,10 @@ function redirect (event) {
     const formData = new FormData(form);
     let values = {};
 
-    formData.forEach(function (value, key) {
-        values[key] = value;
-    })
-
+    
+        formData.forEach(function (value, key) {
+            values[key] = value;
+        })
 
     valuesArray.push(values)
     console.log(valuesArray);
