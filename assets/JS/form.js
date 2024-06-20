@@ -1,26 +1,34 @@
+const form = document.querySelector("form");
 const userInput = document.getElementById("username");
 const titleInput = document.getElementById("title");
 const contentInput = document.getElementById("content");
 
+const submitButton = document.getElementById("submit");
 
+let valuesArray = [];
 
 const values = localStorage.getItem('Form Values');
 
+submitButton.addEventListener('click', redirect);
 
 
-// console.log(userInput, titleInput, contentInput)
-
-const redirect = function () {
+function redirect (event) {
     event.preventDefault();
-   
-    const values = {
-        username: userInput.value,
-        title: titleInput.value,
-        content: contentInput.value,
-    };
 
-    localStorage.setItem('Form Values', JSON.stringify(values));
+    // Virtual assistent helped with this formadata function
+    const formData = new FormData(form);
+    let values = {};
 
-    window.location.href = "blog.html"
+    formData.forEach(function (value, key) {
+        values[key] = value;
+    })
+
+
+    valuesArray.push(values)
+    console.log(valuesArray);
+    localStorage.setItem('Form Values', JSON.stringify(valuesArray));
+
+
+    location.href = "./blog.html"
 };
 

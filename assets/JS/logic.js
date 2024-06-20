@@ -17,10 +17,13 @@ blogDiv.appendChild(h6El);
 
 console.log(blogDiv);
 
-h2El.textContent = localStorageParsed.title;
-pEl.textContent = localStorageParsed.content;
-h6El.textContent = localStorageParsed.username;
-document.body.appendChild(blogDiv);
+
+for (let i = 0; i < localStorageParsed.length; i++) {
+    h2El.textContent = localStorageParsed[i].title;
+    pEl.textContent = localStorageParsed[i].content;
+    h6El.textContent = localStorageParsed[i].username;
+}
+    document.body.appendChild(blogDiv);
 
 console.log(localStorageParsed)
 
