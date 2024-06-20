@@ -1,5 +1,3 @@
-console.log("Hello from the logic file")
-
 const localStorageData = localStorage.getItem('Form Values');
 const localStorageParsed = JSON.parse(localStorageData)
 
@@ -16,7 +14,7 @@ blogDiv.appendChild(h2El);
 blogDiv.appendChild(pEl);
 blogDiv.appendChild(h6El);
 
-console.log(blogDiv);
+// console.log(blogDiv);
 
 
 function addInputsToPost () {

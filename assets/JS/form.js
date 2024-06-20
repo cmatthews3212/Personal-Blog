@@ -5,15 +5,15 @@ const contentInput = document.getElementById("content");
 
 const submitButton = document.getElementById("submit");
 
-let valuesArray = [];
-
-const values = localStorage.getItem('Form Values');
-
 
 
 
 function redirect (event) {
     event.preventDefault();
+    let valuesArray = JSON.parse(localStorage.getItem('Form Values'));
+
+// const values = localStorage.getItem('Form Values');
+// valuesArray.concat(values);
 
     // Virtual assistent helped with this formadata function
     const formData = new FormData(form);
