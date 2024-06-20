@@ -1,5 +1,8 @@
 console.log("Hello from the logic file")
 
+const localStorageData = localStorage.getItem('Form Values');
+const localStorageParsed = JSON.parse(localStorageData)
+
 const blogDiv = document.createElement("div");
 const h2El = document.createElement('h2');
 const pEl = document.createElement('p');
@@ -14,11 +17,16 @@ blogDiv.appendChild(h6El);
 
 console.log(blogDiv);
 
-h2El.textContent = "My Blog";
-pEl.textContent = "Information about my blog";
-h6El.textContent = "Christine Matthews";
-
+h2El.textContent = localStorageParsed.title;
+pEl.textContent = localStorageParsed.content;
+h6El.textContent = localStorageParsed.username;
 document.body.appendChild(blogDiv);
+
+console.log(localStorageParsed)
+
+
+
+
 
 
 
