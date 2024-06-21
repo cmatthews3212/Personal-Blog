@@ -20,6 +20,7 @@ button {
     padding: 7px;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 button:hover {
@@ -27,9 +28,7 @@ button:hover {
     background-color: #dda0dd;
 }
 
-/* button:active {
-    
-} */
+
 
 
 
