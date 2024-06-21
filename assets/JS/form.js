@@ -13,7 +13,12 @@ const submitButton = document.getElementById("submit");
 
 function redirect (event) {
     event.preventDefault();
-   let  valuesArray = JSON.parse(localStorage.getItem('Form Values')); //when I get rid of local storage there is an error unless I put this into array brackets
+    let valuesArray;
+    if (JSON.parse(localStorage.getItem('Form Values')) == null) {
+        valuesArray = [null]
+    } else {
+    valuesArray = JSON.parse(localStorage.getItem('Form Values')); //when I get rid of local storage there is an error unless I put this into array brackets
+    }
     // Virtual assistent helped with this formadata function
     let values = {};
     const formData = new FormData(form);
@@ -33,7 +38,7 @@ function redirect (event) {
         if (valuesArray[0] == null) {
             valuesArray.shift()
         }
-   
+        
    
     localStorage.setItem('Form Values', JSON.stringify(valuesArray));
     
