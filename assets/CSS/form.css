@@ -69,11 +69,12 @@ label {
 
 #submit:hover {
     cursor: pointer;
-}
-
-#submit:active {
     background-color: #dda0dd;
 }
+
+/* #submit:active {
+  
+} */
 
 
 

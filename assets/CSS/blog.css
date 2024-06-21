@@ -24,11 +24,12 @@ button {
 
 button:hover {
     cursor: pointer;
-}
-
-button:active {
     background-color: #dda0dd;
 }
+
+/* button:active {
+    
+} */
 
 
 
