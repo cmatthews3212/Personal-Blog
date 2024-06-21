@@ -13,7 +13,7 @@ const submitButton = document.getElementById("submit");
 
 function redirect (event) {
     event.preventDefault();
-   let  valuesArray = [JSON.parse(localStorage.getItem('Form Values'))];
+   let  valuesArray = JSON.parse(localStorage.getItem('Form Values')); //when I get rid of local storage there is an error unless I put this into array brackets
     // Virtual assistent helped with this formadata function
     let values = {};
     const formData = new FormData(form);
