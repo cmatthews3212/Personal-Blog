@@ -43,7 +43,8 @@ function addInputsToPost () {
         if (h2El.innerText == "" 
             && pEl.innerText == "" 
             && h6El.innerText == "") {
-                
+
+
             } else {
                 document.body.appendChild(blogDiv);
         }
