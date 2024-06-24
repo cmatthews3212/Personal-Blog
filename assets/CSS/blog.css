@@ -76,7 +76,7 @@ footer a:active {
     left: 20px;
     right: -20px;
     bottom: 7px;
-    background-color: #ffb6c1;
+    background-color: #d8bfd8;
     border: solid 5px #db7093;
     -webkit-transition: .4s;
     transition: .4s;
@@ -95,11 +95,11 @@ footer a:active {
   }
   
   input:checked + .slider {
-    background-color: #d8bfd8;
+    background-color: #ffb6c1;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #d8bfd8;
+    box-shadow: 0 0 1px #ffb6c1;
   }
   
   input:checked + .slider:before {
