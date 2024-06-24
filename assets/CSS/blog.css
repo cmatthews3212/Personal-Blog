@@ -1,6 +1,6 @@
 body {
     background-color: 	#ffc0cb;
-    margin: 0;
+    margin: 0px 0px 200px 0px;
     position: relative;
 }
 
@@ -31,14 +31,14 @@ button:hover {
 
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0px;
     width: 100%;
     background-color: #d8bfd8;
     border-top: solid 5px #db7093;
     padding: 30px 0px 30px 40px;
-    margin: 0;
+    margin: 0px;
 }
 
 footer a {
