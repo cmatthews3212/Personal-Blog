@@ -84,6 +84,7 @@ toggle.addEventListener('change', function () {
     } else {
         body.setAttribute('style', 'background-color: #ffc0cb')
         h1.setAttribute('style', 'background-color: #d8bfd8')
+        footer.setAttribute('style', 'background-color: #d8bfd8');
         for (let i = 0; i < blog.length; i++) {
          blog[i].setAttribute('style', 'background-color: #d8bfd8')
         }
