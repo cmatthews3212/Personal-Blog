@@ -10,6 +10,11 @@ const submitButton = document.getElementById("submit");
 // const values = 
 // let valuesArray = [];
 
+function alertForm () {
+    // event.preventDefault();
+    alert('Please fill out the form')
+}
+
 
 function redirect (event) {
     event.preventDefault();
@@ -31,6 +36,7 @@ function redirect (event) {
 
 
         
+       
       
     
         valuesArray.push(values)
@@ -41,12 +47,28 @@ function redirect (event) {
         
    
     localStorage.setItem('Form Values', JSON.stringify(valuesArray));
-    
+
+   
+if (userInput.value == '' && titleInput.value == '' && contentInput.value == '') {
+   alert("please fill out the form!")
+} else {
     location.href = "./blog.html"
-    
+}
     
     
 };
 
+// console.log("local storage", localStorage.getItem('Form Values'));
+
+
+
+
 
 submitButton.addEventListener('click', redirect);
+
+
+
+
+
+    
+
