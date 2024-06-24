@@ -19,6 +19,8 @@ const localStorageParsed = JSON.parse(localStorageData)
 // console.log(blogDiv);
 
 
+//  add form inputs to blog pst
+
 function addInputsToPost () {
     if (localStorageParsed == null) {
       return false;
@@ -56,4 +58,34 @@ function addInputsToPost () {
 addInputsToPost();
 
 console.log(localStorageParsed)
+
+
+// Toggle button
+
+const toggle = document.getElementById("toggle");
+const body = document.getElementById("body")
+const h1 = document.getElementById("heading")
+const blog = document.getElementsByClassName("blog-post")
+
+console.log(blog)
+
+console.log(body)
+
+toggle.addEventListener('change', function () {
+    console.log('this was clicked')
+    if (this.checked) {
+        body.setAttribute('style', 'background-color: #d8bfd8')
+        h1.setAttribute('style', 'background-color: #ffc0cb')
+       for (let i = 0; i < blog.length; i++) {
+        blog[i].setAttribute('style', 'background-color: #ffc0cb')
+       }
+    } else {
+        body.setAttribute('style', 'background-color: #ffc0cb')
+        h1.setAttribute('style', 'background-color: #d8bfd8')
+        for (let i = 0; i < blog.length; i++) {
+         blog[i].setAttribute('style', 'background-color: #d8bfd8')
+        }
+    }
+    
+})
 

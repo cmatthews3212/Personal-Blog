@@ -95,18 +95,8 @@ button:hover {
     border-radius: 50%;
   }
 
-  .slider::after + body {
-    background-color: #d8bfd8;
-  }
+ 
 
- input:checked + h1 {
-    background-color: #ffc0cb;
-  }
-
-
-input:checked + .blog-post {
-    background-color: #ffc0cb;
-}
 
 
 
