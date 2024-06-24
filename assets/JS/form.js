@@ -22,7 +22,7 @@ function redirect (event) {
     if (JSON.parse(localStorage.getItem('Form Values')) == null) {
         valuesArray = [null]
     } else {
-    valuesArray = JSON.parse(localStorage.getItem('Form Values')); //when I get rid of local storage there is an error unless I put this into array brackets
+    valuesArray = JSON.parse(localStorage.getItem('Form Values')); 
     }
     // Virtual assistent helped with this formadata function
     let values = {};
