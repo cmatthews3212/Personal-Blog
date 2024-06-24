@@ -58,7 +58,7 @@ if (userInput.value == '' && titleInput.value == '' && contentInput.value == '')
     
 };
 
-console.log("local storage", localStorage.getItem('Form Values'));
+// console.log("local storage", localStorage.getItem('Form Values'));
 
 
 

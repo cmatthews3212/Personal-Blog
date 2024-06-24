@@ -57,7 +57,7 @@ function addInputsToPost () {
 }
 addInputsToPost();
 
-console.log(localStorageParsed)
+// console.log(localStorageParsed)
 
 
 // Toggle button
@@ -67,9 +67,9 @@ const body = document.getElementById("body")
 const h1 = document.getElementById("heading")
 const blog = document.getElementsByClassName("blog-post")
 
-console.log(blog)
+// console.log(blog)
 
-console.log(body)
+// console.log(body)
 
 toggle.addEventListener('change', function () {
     console.log('this was clicked')
